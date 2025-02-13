@@ -1,14 +1,14 @@
 import ProductList from "@/components/shared/product/product-list";
 import sampleData from "@/db/sample-data";
 import { getLatestProducts } from "@/lib/actions/product.actions";
+import { LOCAL } from "@/lib/constants";
 
 const Homepage = async () => {
   const latestProducts = getLatestProducts();
-  const local = false;
 
   return (
     <>
-      {local ? (
+      {LOCAL ? (
         <ProductList
           data={sampleData.products}
           title="Newest Arrivals"
