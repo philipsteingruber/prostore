@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "tsx ./db/seed"
+    "postinstall": "npx tsx ./db/seed"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.6",
